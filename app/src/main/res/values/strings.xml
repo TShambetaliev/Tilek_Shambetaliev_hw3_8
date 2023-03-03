@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Tilek_Shambetaliev_hw3_7</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="alive">Alive</string>
+    <string name="name">Rick Sanchez</string>
+</resources>
