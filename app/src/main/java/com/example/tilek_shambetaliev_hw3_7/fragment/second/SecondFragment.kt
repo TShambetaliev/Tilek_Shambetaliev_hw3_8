@@ -13,6 +13,7 @@ import com.example.tilek_shambetaliev_hw3_7.loadImage
 class SecondFragment : Fragment() {
 
     private lateinit var binding: FragmentSecondBinding
+    private lateinit var navArgs: SecondFragmentArgs
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -26,16 +27,14 @@ class SecondFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        getsArgument()
-    }
 
-    private fun getsArgument() {
-        val result = arguments?.getSerializable(FirstFragment.KEY_OF_KEYS) as Persona
-        with(binding) {
-            tvLiveStat.text=result.live.toString()
-            tvNames.text=result.name.toString()
-            imgPer.loadImage(result.image.toString())
+
+
+            val rickiMorti = navArgs.posit
+            with(binding) {
+                tvLiveStat.text=rickiMorti.live.toString()
+                tvNames.text=rickiMorti.name.toString()
+                imgPer.loadImage(rickiMorti.image.toString())
+            }
         }
     }
-
-}

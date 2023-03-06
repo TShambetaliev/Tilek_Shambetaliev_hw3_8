@@ -9,10 +9,18 @@
         android:id="@+id/firstFragment"
         android:name="com.example.tilek_shambetaliev_hw3_7.fragment.first.FirstFragment"
         android:label="fragment_first"
-        tools:layout="@layout/fragment_first" />
+        tools:layout="@layout/fragment_first" >
+        <action
+            android:id="@+id/action_firstFragment_to_secondFragment"
+            app:destination="@id/secondFragment" />
+    </fragment>
     <fragment
         android:id="@+id/secondFragment"
         android:name="com.example.tilek_shambetaliev_hw3_7.fragment.second.SecondFragment"
         android:label="fragment_second"
-        tools:layout="@layout/fragment_second" />
+        tools:layout="@layout/fragment_second">
+        <argument
+            android:name="posit"
+            app:argType="com.example.tilek_shambetaliev_hw3_7.fragment.first.Person"/>
+    </fragment>
 </navigation>

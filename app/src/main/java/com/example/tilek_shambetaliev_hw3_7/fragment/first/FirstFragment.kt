@@ -43,14 +43,8 @@ class FirstFragment : Fragment() {
         val adapter = PersonaAdapter(personalist, this::onClick)
         binding.rvPersona.adapter = adapter
 
-
-
-
-
     }
     private fun onClick(position: Int){
-        findNavController().navigate(R.id.secondFragment,
-        bundleOf(KEY_OF_KEYS to personalist[position])
-        )
+        findNavController().navigate(FirstFragmentDirections.actionFirstFragmentToSecondFragment(personalist[position]))
     }
 }
