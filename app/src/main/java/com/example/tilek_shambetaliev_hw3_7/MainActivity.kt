@@ -1,4 +1,4 @@
-package com.example.tilek_shambetaliev_hw3_7.activity
+package com.example.tilek_shambetaliev_hw3_7
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

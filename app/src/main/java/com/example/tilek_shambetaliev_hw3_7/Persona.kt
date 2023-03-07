@@ -1,4 +1,4 @@
-package com.example.tilek_shambetaliev_hw3_7.fragment.first
+package com.example.tilek_shambetaliev_hw3_7
 
 data class Persona(
     val image: String? = "Картинка не загружена",

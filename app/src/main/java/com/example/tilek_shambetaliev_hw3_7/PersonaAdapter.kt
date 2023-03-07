@@ -1,13 +1,10 @@
-package com.example.tilek_shambetaliev_hw3_7.fragment.first
+package com.example.tilek_shambetaliev_hw3_7
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.Adapter
 import com.example.tilek_shambetaliev_hw3_7.databinding.ItemPersonaBinding
-import com.example.tilek_shambetaliev_hw3_7.loadImage
-import kotlin.reflect.KFunction1
 
 class PersonaAdapter(val personList: ArrayList<Persona>, val OnClick: (position: Int)->Unit) :
     Adapter<PersonaAdapter.ViewHolder>() {

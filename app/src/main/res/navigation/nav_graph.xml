@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/firstFragment"
-        android:name="com.example.tilek_shambetaliev_hw3_7.fragment.first.FirstFragment"
+        android:name="com.example.tilek_shambetaliev_hw3_7.FirstFragment"
         android:label="fragment_first"
         tools:layout="@layout/fragment_first" >
         <action
@@ -16,11 +16,11 @@
     </fragment>
     <fragment
         android:id="@+id/secondFragment"
-        android:name="com.example.tilek_shambetaliev_hw3_7.fragment.second.SecondFragment"
+        android:name="com.example.tilek_shambetaliev_hw3_7.SecondFragment"
         android:label="fragment_second"
         tools:layout="@layout/fragment_second">
         <argument
-            android:name="posit"
-            app:argType="com.example.tilek_shambetaliev_hw3_7.fragment.first.Person"/>
+            android:name="positive"
+            app:argType="com.example.tilek_shambetaliev_hw3_7.Persona"/>
     </fragment>
 </navigation>
